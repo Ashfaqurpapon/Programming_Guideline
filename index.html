@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Programming_Guideline</title>
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title>Programming Guideline</title>
+     <link rel="stylesheet" type="text/css" href="new.css">
+
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <style>
+          .zoom {
+
+
+               transition: transform .7s;
+
+
+
+          }
+
+          .zoom:hover {
+               transform: scale(1.1);
+
+          }
+
+          .zoom:hover {
+               background-color: lightseagreen;
+          }
+
+          body {
+               font-family: Arial, Helvetica, sans-serif;
+          }
+
+
+          input[type=text],
+          [type=email],
+          [type=number],
+          input[type=password] {
+               width: 100%;
+               padding: 12px 20px;
+               margin: 8px 0;
+               display: inline-block;
+               border: 1px solid #ccc;
+               box-sizing: border-box;
+          }
+
+
+          button {
+               background-color: #04aa6dc0;
+               color: white;
+               padding: 6px 20px;
+               margin: 5px 0;
+               margin-top: 1px;
+               border: none;
+               cursor: pointer;
+               width: 100%;
+          }
+
+          button:hover {
+               opacity: 0.8;
+          }
+
+
+          .cancelbtn {
+               width: auto;
+               padding: 10px 18px;
+               background-color: #f44336;
+          }
+
+
+          .imgcontainer {
+               text-align: center;
+               margin: 24px 0 12px 0;
+               position: relative;
+          }
+
+          img.avatar {
+               width: 40%;
+               border-radius: 50%;
+          }
+
+          .container {
+               padding: 16px;
+          }
+
+          span.psw {
+               float: right;
+               padding-top: 16px;
+          }
+
+
+          .modal {
+               display: none;
+               position: fixed;
+               z-index: 1;
+               left: 0;
+               top: 0;
+               width: 100%;
+               height: 100%;
+               overflow: auto;
+               background-color: rgb(0, 0, 0);
+               background-color: rgba(0, 0, 0, 0.4);
+               padding-top: 60px;
+          }
+
+
+          .modal-content {
+               background-color: #fefefe;
+               margin: 5% auto 15% auto;
+
+               border: 1px solid #888;
+               width: 80%;
+
+          }
+
+
+          .close {
+               position: absolute;
+               right: 25px;
+               top: 0;
+               color: #000;
+               font-size: 35px;
+               font-weight: bold;
+          }
+
+          .close:hover,
+          .close:focus {
+               color: red;
+               cursor: pointer;
+          }
+
+
+          .animate {
+               -webkit-animation: animatezoom 0.6s;
+               animation: animatezoom 0.6s
+          }
+
+          @-webkit-keyframes animatezoom {
+               from {
+                    -webkit-transform: scale(0)
+               }
+
+               to {
+                    -webkit-transform: scale(1)
+               }
+          }
+
+          @keyframes animatezoom {
+               from {
+                    transform: scale(0)
+               }
+
+               to {
+                    transform: scale(1)
+               }
+          }
+
+
+          @media screen and (max-width: 300px) {
+               span.psw {
+                    display: block;
+                    float: none;
+               }
+
+               .cancelbtn {
+                    width: 100%;
+               }
+          }
+
+          #welcome {
+               color: #f44336;
+          }
+
+          #compitive {
+               color: aqua;
+          }
+
+          .text_colour_white {
+               color: white;
+          }
+
+          .card_color {
+               background-color: cadetblue;
+          }
+
+          .text_color_beguni {
+               color: cyan;
+          }
+
+          .card_color2 {
+               background-color: #ccc;
+          }
+
+          .card_color3 {
+               background-color: beige;
+          }
+
+          .card_color4 {
+               background-color: darkkhaki;
+          }
+
+          .card_color5 {
+               background-color: lavender;
+          }
+
+          .card_color6 {
+               background-color: silver;
+          }
+
+          .section_taj {
+               height: 500px;
+               padding-bottom: 150px;
+               padding-top: 50px;
+          }
+
+
+
+          .half-part {
+               width: 40%;
+               float: left;
+               margin-left: 5%;
+               padding-left: 2%;
+          }
+
+
+          .half-part img {
+               width: 100%;
+               height: auto;
+               object-fit: contain;
+
+          }
+
+          .frnt_size {
+               padding-top: 80px;
+               font-size: 50px;
+
+          }
+
+          #name-color_h3 {
+               color: darksalmon;
+
+          }
+
+          .p_taj {
+               color: white;
+               font-size: 19px;
+               padding-top: 40px;
+
+          }
+
+          #name-color {
+               color: deeppink;
+               font-weight: 600;
+          }
+
+          .top_part {
+               padding-top: 200px;
+               padding-bottom: 200px;
+               margin-top: 200px;
+          }
+
+          .title h2 {
+               color: white;
+               font-size: 75px;
+               width: 1130px;
+               margin: 30px auto;
+               text-align: center;
+               margin-top: 400px;
+          }
+
+          .service {
+               background: #101010;
+               width: 100%;
+               padding: 100px 0px;
+          }
+
+          .title h2 {
+               color: white;
+               font-size: 75px;
+               width: 1130px;
+               margin: 30px auto;
+               text-align: center;
+               margin-top: 400px;
+          }
+
+          .box {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               min-height: 400px;
+          }
+
+
+
+          .card_ {
+               height: 355px;
+               width: 355px;
+               padding: 20px 35px;
+               background: #191919;
+               border-radius: 20px;
+               margin: 7px;
+               position: relative;
+               overflow: hidden;
+               text-align: center;
+          }
+
+
+
+
+
+          .card_ i {
+               font-size: 50px;
+               display: block;
+               text-align: center;
+               margin: 25px 0px;
+               color: #f9004d;
+
+          }
+
+          .feedback {
+               color: deeppink;
+               font-size: 23px;
+               margin-bottom: 15px;
+               margin-top: 25px;
+          }
+
+          .pra p {
+               color: #fcf;
+               font-size: 16px;
+               line-height: 27px;
+               margin-bottom: 25px;
+          }
+
+          .marg {
+               margin-top: 150px;
+          }
+
+          #slide_text_color {
+               color: #000;
+          }
+
+          .marg2 {
+               margin-top: 100px;
+          }
+
+          .marg3 {
+               margin-top: 0px;
+               margin-bottom: 200px;
+          }
+
+          .marg4 {
+               margin-top: 0px;
+               margin-bottom: 200px;
+          }
+
+          .colorr {
+               color: #ccc;
+          }
+
+          #welcome2 {
+               color: chocolate;
+          }
+
+          #welcome4 {
+               color: chartreuse;
+          }
+     </style>
+
+
+
+
+</head>
+
+<body class="bac">
+
+
+     <section class=" container ">
+          <div class=" bac mb-auto row my-5  text-dark shadow p-3 mt-0  ">
+               <h1 class="nav_logo col bac ">Programming<span class="nav_span">Guideline</span></h1>
+
+               <nav class="navbar navbar-expand-lg  text-dark col bac">
+                    <div class="container-fluid ">
+
+                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                              aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                         </button>
+                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                   <li class="nav-item">
+                                        <a class="nav-link active text-bold fw-bold" id="" aria-current="page"
+                                             href="#">Home</a>
+                                   </li>
+                                   <li class="nav-item h-5">
+                                        <a class="nav-link fw-bold" href="#KISU_KOTHA">Courses</a>
+                                   </li>
+                                   <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown"
+                                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                             About US
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                             <li><a class="dropdown-item " href="#">Admin
+                                                       panal</a></li>
+                                             <li><a class="dropdown-item" href="#OUR_SUCCESS">Our success</a></li>
+                                             <li>
+                                                  <hr class="dropdown-divider">
+                                             </li>
+                                             <li><a class="dropdown-item" href="#">Blogs</a></li>
+                                        </ul>
+                                   <li class="nav-item">
+                                        <a class="nav-link pe-3 fw-bold " target="_blank"
+                                             href="http://127.0.0.1:5500/login.html">Contact</a>
+                                   </li>
+
+
+                                   <li>
+                                        <button class="button_"
+                                             onclick="document.getElementById('id01').style.display='block'"
+                                             style="width:auto;">Login</button>
+
+                                        <div id="id01" class="modal">
+
+                                             <form class="modal-content animate" action="send1.php" method="post">
+                                                  <div class="imgcontainer">
+                                                       <span onclick="document.getElementById('id01').style.display='none'"
+                                                            class="close" title="Close Modal">&times;</span>
+
+                                                  </div>
+
+                                                  <div class="container">
+                                                       <label for="name"><b>Username</b></label>
+                                                       <input type="text" placeholder="Enter Username" name="name"
+                                                            required>
+
+                                                       <label for="email"><b>Email</b></label>
+                                                       <input type="email" placeholder="Enter email" name="email"
+                                                            required>
+
+                                                       <label for="phone"><b>phone</b></label>
+                                                       <input type="number" placeholder="Enter Phone" name="phone"
+                                                            required>
+
+                                                       <button type="submit" name="login">Login</button>
+
+                                                  </div>
+
+                                                  <div class="container" style="background-color:#f1f1f1">
+                                                       <button type="button"
+                                                            onclick="document.getElementById('id01').style.display='none'"
+                                                            class="cancelbtn">Cancel</button>
+
+                                                  </div>
+                                             </form>
+                                        </div>
+                                   </li>
+
+                              </ul>
+
+                         </div>
+                    </div>
+          </div>
+          </nav>
+     </section>
+     <section class=" my-5 ">
+
+          <div class="container">
+               <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                              class="active" aria-current="true" aria-label="Slide 1"></button>
+                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                              aria-label="Slide 2"></button>
+                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                              aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                         <div class="carousel-item active">
+                              <img src="slideshow-3.jpg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-none d-md-block">
+                                   <h3 class="fw-bold" id="welcome2">Programming just for fun</h3>
+                                   <p class="colorr">Personalized, fun, and interactive learning process. Enjoy our
+                                        gamified courses to
+                                        master python, mobile app development, cyber security, C programming, C++, and
+                                        many more.</p>
+                              </div>
+                         </div>
+                         <div class="carousel-item">
+                              <img src="slideshow-2jpg.jpg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-none d-md-block">
+                                   <h5 class="fw-bold" id="welcome">Learn coding and get job</h5>
+                                   <p id="welcome4">
+                                        Your mind is programmable - if you're not programming your mind, else will
+                                        program it for you.</p>
+                              </div>
+                         </div>
+                         <div class="carousel-item">
+                              <img src="image-slide2.jpg" class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-none d-md-block">
+                                   <h3 class="fw-bold" id="welcome">Knock your brain</h3>
+                                   <p class=>'A brain was only capable of what it could conceive, and it
+                                        couldn’t conceive what
+                                        it had never experienced.</p>
+                              </div>
+                         </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                         data-bs-slide="prev">
+                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                         data-bs-slide="next">
+                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Next</span>
+                    </button>
+               </div>
+          </div>
+
+     </section>
+     <section class="container my-10 marg">
+
+
+          <div class="row ">
+               <div class="col d-flex align-items-center">
+                    <div class="">
+
+                         <h1 class="  padding-left" id="welcome">Welcome To</h1>
+                         <h1><span class="" id="compitive">Competitive Programming</span><span
+                                   class="text_colour_white">
+                                   world!</span>
+                         </h1>
+
+
+                         <p class="text_colour_white">Competitive programmers are known for their problem solving
+                              skills. Like developers show
+                              their
+                              skills by
+                              making different projects, competitive programmers show their talent by taking part in
+                              different
+                              challenges
+                              which sites like Codeforces, Codechef, Topcoder, Hackerrank.</p>
+                         <button class="button_" style="width:auto;"><a target="_blank"
+                                   href="http://127.0.0.1:5500/taj.html">click
+                                   Here</a>
+                         </button>
+                    </div>
+
+
+
+
+
+               </div>
+               <div class="col  ps-5 mx-auto ">
+
+                    <img class="w-100" width="" src="programming pic.jpg" class="d-block w-75" alt="">
+
+               </div>
+          </div>
+     </section>
+
+
+
+     <section class="container" id="KISU_KOTHA">
+
+          <div class="">
+               <h1 class=" my-10 d-flex justify-content-center rounded-pill mt-5 mb-5 fw-bold  " id="welcome">
+                    COURSES
+               </h1>
+          </div>
+
+
+
+          <div class="row row-cols-1 row-cols-md-3 g-4 mt-5  ">
+               <div class="col background-color:block">
+                    <div class="  card zoom  shadow p-3 mb-5 h-100  border-0  ">
+                         <h3 class=" card_color fw-bold d-flex justify-content-center  ">C</h3>
+                         <div class="">
+                              <div class="m-3 mission">
+                                   <h4 class=" m-3card-title fw-bolder">Beginner</h4>
+
+                              </div>
+                              <div class="d-grid gap-0">
+
+                                   <div class=" mt-0 ms-3   d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Introduction</div>
+
+                                   </div>
+
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Scan/Print</div>
+
+                                   </div>
+
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Array</div>
+
+                                   </div>
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Loop</div>
+
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="col">
+
+                    <div class="card shadow p-3 mb-5  zoom border-0 h-100">
+                         <h3 class=" card_color fw-bold d-flex justify-content-center ">C++</h3>
+                         <div class="">
+                              <div class=" m-3 mission">
+                                   <h4 class=" m-3card-title fw-bolder">Stl</h4>
+
+                              </div>
+                              <div class="d-grid gap-0">
+
+                                   <div class=" mt-0 ms-3   d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Set</div>
+
+                                   </div>
+
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Map</div>
+
+                                   </div>
+
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Stack</div>
+
+                                   </div>
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Queue</div>
+
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="col ">
+                    <div class="card  zoom border-0   shadow p-3 mb-5 h-100">
+                         <h3 class=" card_color fw-bold d-flex justify-content-center ">Algos</h3>
+                         <div class="">
+                              <div class=" m-3 mission">
+                                   <h4 class=" m-3card-title fw-bolder">Storting algorithom</h4>
+
+                              </div>
+                              <div class="d-grid gap-0">
+
+                                   <div class=" mt-0 ms-3   d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Bubble sort</div>
+
+                                   </div>
+
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Marge sort</div>
+
+                                   </div>
+
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Insert Sort</div>
+
+                                   </div>
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Quick sort</div>
+
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+
+
+
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4 mt-5  ">
+               <div class="col   ">
+                    <div class=" card zoom  shadow p-3 mb-5 h-100  border-0  ">
+                         <h3 class=" card_color fw-bold d-flex justify-content-center ">Html</h3>
+                         <div class="">
+                              <div class=" m-3 mission">
+                                   <h4 class=" m-3card-title fw-bolder">Beginner</h4>
+
+                              </div>
+                              <div class="d-grid gap-0">
+
+                                   <div class=" mt-0 ms-3   d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Navbar</div>
+
+                                   </div>
+
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">head</div>
+
+                                   </div>
+
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Body</div>
+
+                                   </div>
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Footer</div>
+
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="col">
+
+                    <div class="card shadow p-3 mb-5  zoom border-0 h-100">
+                         <h3 class=" card_color fw-bold d-flex justify-content-center ">Css</h3>
+                         <div class="">
+                              <div class=" m-3 mission">
+                                   <h4 class=" m-3card-title fw-bolder">Framework</h4>
+
+                              </div>
+                              <div class="d-grid gap-0">
+
+                                   <div class=" mt-0 ms-3   d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Css framwrok</div>
+
+                                   </div>
+
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Broostab</div>
+
+                                   </div>
+
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Tailwind</div>
+
+                                   </div>
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">React</div>
+
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="col ">
+                    <div class="card  zoom border-0   shadow p-3 mb-5 h-100">
+                         <h3 class=" card_color fw-bold d-flex justify-content-center ">Java</h3>
+                         <div class="">
+                              <div class=" m-3 mission">
+                                   <h4 class=" m-3card-title fw-bolder">Class</h4>
+
+                              </div>
+                              <div class="d-grid gap-0">
+
+                                   <div class=" mt-0 ms-3   d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">inheritance</div>
+
+                                   </div>
+
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">polymorphism</div>
+
+                                   </div>
+
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Abstrack</div>
+
+                                   </div>
+
+                                   <div class=" mt-0 ms-3    d-flex   ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class=" mt-2 " viewBox="0 0 16 16"
+                                             width="14" height="16">
+                                             <path fill-rule="evenodd"
+                                                  d="M5.75 4A1.75 1.75 0 004 5.75v4.5c0 .966.784 1.75 1.75 1.75h4.5A1.75 1.75 0 0012 10.25v-4.5A1.75 1.75 0 0010.25 4h-4.5z">
+                                             </path>
+                                        </svg>
+
+                                        <div class="ms-2   pt-0 ">Ccdm</div>
+
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+
+
+
+          </div>
+
+
+     </section>
+     <!--Section_1-->
+     <div class="marg2" id="OUR_SUCCESS">
+          <h1 class=" my-10 d-flex justify-content-center rounded-pill fw-bold  " id="welcome"> OUR_SUCCESS</h1>
+     </div>
+     <section class="  section_taj mt-0 marg3">
+
+          <div class="half-part">
+               <h1 class="frnt_size" id="name-color">Nafiul Adnan Chowdhury </h1>
+               <h3 id="name-color_h3">Google,Dublin</h3>
+               <p class="p_taj">This website
+                    relates to cardiovascular exercise and more particularly to a combination
+                    of guidance, motivation, entertainment, participation and achievement monitoring.I followed this
+                    website to clear my basics in different programming Languages.I helped me a lot at my interview.
+               </p><br>
+               <button class="button_kisu" style="width:auto;"><a target="_blank"
+                         href="http://codeforces.com/profile/Mr.Adnan">More</a></button>
+
+
+          </div>
+
+
+          <div class="half-part">
+               <img src="adnan_vhai.png" alt="">
+          </div>
+     </section>
+
+
+     <!--section_2-->
+     <section class=" section_taj ">
+
+          <div class="half-part">
+               <img src="emrul vhai.png" alt="">
+          </div>
+
+          <div class="half-part">
+               <h1 class="frnt_size" id="name-color">Emrul Chowdhury </h1>
+               <h3 id="name-color_h3">Amazon,London</h3>
+               <p class="p_taj">My journey to Amazon was not so easy.I left my previous job.It was high time for me and
+                    my family.But lose my hope.I was always ambitious..I grow up connection many people those whom were
+                    experienced. I studied hard to improve my skill. And finally now I'm Amazonian.
+               </p><br>
+               <button class="button_kisu" style="width:auto;"> <a target="_blank"
+                         href="https://codeforces.com/profile/Mr_Emrul">More</a></button>
+
+
+          </div>
+
+
+
+     </section>
+
+     <!--Section_3-->
+     <section class="top_part section_taj marg4">
+
+          <div class="half-part">
+               <h1 class="frnt_size" id="name-color">Ashfaqur Rahman Papon </h1>
+               <h3 id="name-color_h3">Specialist,Codeforces</h3>
+               <p class="p_taj">From Zero level to my this level of coding knowledge this website help much.Its help to
+                    made build my confidance and inspire to go ahead.So,as a beginner i think this website help you most
+                    whom want to start programming.
+               </p><br>
+               <button class="button_kisu" style="width:auto;"> <a target="_blank"
+                         href="https://codeforces.com/profile/ARP75">More</a></button>
+
+
+          </div>
+
+          <div class="half-part">
+               <img src="papon.png" alt="">
+          </div>
+     </section>
+
+
+
+     <!--section_4-->
+     <section class="top_part section_taj marg4 mb-0">
+
+          <div class="half-part">
+               <img src="tajbin.png" alt="">
+          </div>
+
+          <div class="half-part">
+               <h1 class="frnt_size" id="name-color">Tajbin Jahan</h1>
+               <h3 id="name-color_h3">Specialist,Codechef</h3>
+               <p class="p_taj">It`s a fantastic site for a beginner. I could feel the effort that was put into to make
+                    sure people understood.
+                    this was a nice introductory course to get basic knowledge of the vast field of Programming.when I
+                    become one the greatest, I will remember this beginning.
+               </p><br>
+               <button class="button_kisu" style="width:auto;"> <a target="_blank"
+                         href="https://codeforces.com/profile/tajbin_mu">More</a></button>
+
+
+          </div>
+
+
+
+     </section>
+
+
+     <section class="container ">
+          <div class="title">
+               <h2>Our Feedback</h2>
+          </div>
+          <div class="box mt-5">
+               <div class="card_">
+
+
+                    <h5 class="feedback">Md Nurul Afsar</h5>
+                    <p class="mb-0 ">⭐⭐⭐⭐⭐</p><br>
+                    <div class="pra">
+                         <p>This was a nice introductory course to get basic knowledge of the vast field of Programming.
+                         </p>
+
+                         <p style="text-align: center;">
+                              <button class="button_feedback" style="width:auto;">More</button>
+                         </p>
+                    </div>
+               </div>
+
+               <div class="card_">
+
+                    <h5 class="feedback">Israt Tulshi</h5>
+                    <p class="mb-0">⭐⭐⭐⭐</p><br>
+                    <div class="pra">
+                         <p>I had started my coding journey with this website.Its really helpful for beginners. </p>
+
+                         <p style="text-align: center;">
+                              <button class="button_feedback" style="width:auto;">More</button>
+                         </p>
+                    </div>
+               </div>
+               <div class="card_">
+
+                    <h5 class="feedback">Shajalal Shohag</h5>
+                    <p class="mb-0">⭐⭐⭐⭐</p><br>
+                    <div class="pra">
+                         <p>t`s a fantastic site for a beginner. I could feel for about the
+                              people understood. </p>
+
+                         <p style="text-align: center;">
+                              <button class="button_feedback" style="width:auto;">More</button>
+                         </p>
+                    </div>
+               </div>
+
+               <div class="card_">
+
+                    <h5 class="feedback">Rafi Mahmud</h5>
+                    <p class="mb-0">⭐⭐⭐⭐</p><br>
+                    <div class="pra">
+                         <p>Highly recommended to everyone to follow this website. Also the extra material is very
+                              helpful
+                         </p>
+
+                         <p style="text-align: center;">
+                              <button class="button_feedback" style="width:auto;">More</button>
+                         </p>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+
+
+     <footer>
+          <p>Programming Guideline</p>
+          <p>For more HTML, CSS, and coding tutorial - please click on the link below to subscribe to my channel:</p>
+          <div class="social">
+               <a href="#"><i class="fab fa-facebook-f"></i></a>
+               <a href="#"><i class="fab fa-instagram"></i></a>
+               <a href="#"><i class="fab fa-dribbble"></i></a>
+          </div>
+          <p class="end">CopyRight By Programming Guideline</p>
+     </footer>
+     <script>
+
+          var modal = document.getElementById('id01');
+
+
+          window.onclick = function (event) {
+               if (event.target == modal) {
+                    modal.style.display = "none";
+               }
+          }
+     </script>
+
+
+     <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
